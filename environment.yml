@@ -2,17 +2,17 @@ name: e14env
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - gdown
   - ipykernel
-  - pandas
-  - numpy
-  - scikit-learn
   - matplotlib
+  - numpy
+  - opencv
+  - pandas
+  - pillow
+  - python=3.10
+  - scikit-learn
+  - seaborn
+  - timm
   - torchvision
   - transformers
-  - timm
-  - pillow
-  - opencv
-  - gdown
-  - seaborn
-prefix: /Users/renee/miniforge3/envs/e14env
+prefix: /home/renee.zac/miniforge3/envs/e14env
