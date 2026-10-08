@@ -1,3 +1,6 @@
+# Build with: CONDA_OVERRIDE_CUDA=12.9 mamba env create -f environment.yml
+# (the override lets the solver pick the CUDA build of pytorch; the cuda129
+# runtime is minor-version compatible with the R560 / CUDA 12.6 driver)
 name: e14env
 channels:
   - conda-forge
@@ -10,9 +13,10 @@ dependencies:
   - pandas
   - pillow
   - python=3.10
+  - pytorch=*=cuda129_mkl*
   - scikit-learn
   - seaborn
   - timm
-  - torchvision
+  - torchvision=*=cuda129*
   - transformers
 prefix: /home/renee.zac/miniforge3/envs/e14env
